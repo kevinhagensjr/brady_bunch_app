@@ -1,0 +1,45 @@
+<html>
+	<head>
+		  <meta charset="utf-8">
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Brady Bunch App</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	
+	    <!-- dropzone.js for video upload -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>  
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" />
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class=row>
+				<div class="col-12-sm">
+					
+					<div id="upload-container" style="display:block; margin-left:auto; margin-right: auto; margin-top: 15%; width: 300px;" > 
+					 <form method="post" action="/submit" enctype="multipart/form-data">
+						 <input name="file" id="filesToUpload" type="file" multiple="" />
+						 <input id="upload-btn" class="btn btn-success" type="submit" value="submit" style="margin-top:5%; margin-left: auto; margin-right: auto;">
+					</form>		
+					</div>			
+			</div>
+			
+			<footer style="background: rgba(206, 206, 206, 0.88); height:100%; margin-top: 5%">
+				<div class="row">
+					<div class="col-12-sm">
+						<h1 style="margin-top: 10%; margin-left: auto; margin-right: auto; text-align: center;">Brady Bunch App</h1>
+						<p style="margin-left: auto; margin-right: auto; min-width: 500px; width: 50%; line-height: 33px;">
+							Simply drag and drop 4 short video clips in order to combine them together into a video composition similar to the intro of the brady bunch sitcom.
+							After all 4 videos have been uploaded, simply select the submit button and the video will be downloaded to your browser.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>	
+</html>
+	

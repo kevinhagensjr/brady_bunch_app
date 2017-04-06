@@ -1,0 +1,16 @@
+{
+  "name": "brady_bunch",
+  "version": "1.0.0",
+  "description": "Video app that converts an array of videos into a brady bunch tile",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "fluent-ffmpeg": "^2.1.0",
+    "multer": "^1.3.0"
+  }
+}
